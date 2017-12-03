@@ -17,6 +17,16 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
+            <TextView
+                android:id="@+id/detail_textview_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="loading name..."
+                android:textSize="24sp"
+                android:gravity="center"
+                android:padding="16dp"
+                android:layout_marginBottom="8dp"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Title"/>
             <FrameLayout
                 android:id="@+id/frag_container"
                 android:layout_width="250dp"
@@ -71,13 +81,6 @@
             android:orientation="vertical"
 
             >
-
-            <TextView
-                android:id="@+id/detail_textview_name"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="loading name..."
-                android:textSize="24sp" />
 
             <TextView
                 android:id="@+id/detail_textview_type"

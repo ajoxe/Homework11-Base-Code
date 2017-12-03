@@ -73,7 +73,6 @@ public class PokemonDetailActivity extends AppCompatActivity{
 				a.append("Type: ");
 				a.append(pokemon.getTypes()[0].getType().getName().toUpperCase());
 				StringBuilder b = new StringBuilder();
-				b.append("Name: ");
 				b.append(pokemonName.toUpperCase());
 				StringBuilder c = new StringBuilder();
 				c.append("Stats:\n");
