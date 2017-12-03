@@ -2,18 +2,29 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:gravity="center"
-    android:background="@color/colorPrimary">
+    android:background="#000000"
+    android:padding="16dp">
 
     <android.support.v7.widget.CardView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center">
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        app:cardCornerRadius="16dp">
         <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:orientation="vertical">
+            <FrameLayout
+                android:id="@+id/frag_container"
+                android:layout_width="250dp"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_weight="2">
+
+            </FrameLayout>
 
 
 
@@ -24,19 +35,14 @@
             android:orientation="vertical">
 
 
-            <FrameLayout
-                android:id="@+id/frag_container"
-                android:layout_width="250dp"
-                android:layout_height="150dp"
-                android:layout_gravity="center">
 
-            </FrameLayout>
 
             <LinearLayout
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="0dp"
                 android:orientation="horizontal"
-                android:layout_gravity="center">
+                android:layout_gravity="center"
+                android:layout_weight="1">
 
                 <Button
                     android:id="@+id/show_front"
@@ -57,15 +63,16 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="0dp"
             android:orientation="vertical"
-            android:textAlignment="center">
+            android:textAlignment="center"
+            android:layout_weight="1">
 
             <TextView
                 android:id="@+id/detail_textview_name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="loading name"
+                android:text="loading name..."
                 android:textAlignment="center"
                 android:textSize="20sp" />
 
@@ -73,7 +80,7 @@
                 android:id="@+id/detail_textview_type"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="loading type"
+                android:text="loading type..."
                 android:textAlignment="center"
                 android:textSize="20sp" />
 
@@ -81,7 +88,7 @@
                 android:id="@+id/detail_textview_stats"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="loading stats"
+                android:text="loading stats..."
                 android:textAlignment="center"
                 android:textSize="20sp" />
 
