@@ -7,6 +7,7 @@ import android.support.annotation.Nullable;
 import android.support.design.widget.Snackbar;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
+import android.text.method.ScrollingMovementMethod;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
@@ -69,13 +70,13 @@ public class PokemonDetailActivity extends AppCompatActivity{
 
 
 				StringBuilder a = new StringBuilder();
-				a.append("Pokemon Type:\n");
+				a.append("Type: ");
 				a.append(pokemon.getTypes()[0].getType().getName().toUpperCase());
 				StringBuilder b = new StringBuilder();
-				b.append("Pokemon Name:\n");
+				b.append("Name: ");
 				b.append(pokemonName.toUpperCase());
 				StringBuilder c = new StringBuilder();
-				c.append("Pokemon Stats:\n");
+				c.append("Stats:\n");
 				for(int i = 0;i < pokemon.getStats().length;i++){
 					c.append(pokemon.getStats()[i].getStat().getName().toUpperCase());
 					c.append(": ");
