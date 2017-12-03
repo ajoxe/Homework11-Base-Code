@@ -22,78 +22,80 @@
                 android:layout_width="250dp"
                 android:layout_height="0dp"
                 android:layout_gravity="center"
-                android:layout_weight="2">
+                android:layout_weight="1">
 
             </FrameLayout>
 
 
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:orientation="vertical">
-
-
-
-
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:orientation="horizontal"
                 android:layout_gravity="center"
-                android:layout_weight="1">
+                android:layout_weight=".25"
+                android:gravity="center">
 
                 <Button
                     android:id="@+id/show_front"
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="show front" />
+                    android:text="show front"
+                    android:textColor="#ffffff"
+                    android:backgroundTint="#000000"/>
 
                 <Button
                     android:id="@+id/show_back"
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="show back" />
+                    android:text="show back"
+                    android:textColor="#ffffff"
+                    android:backgroundTint="#000000"/>
 
             </LinearLayout>
 
 
-        </LinearLayout>
 
-        <LinearLayout
+        <ScrollView
             android:layout_width="match_parent"
             android:layout_height="0dp"
+            android:layout_weight="1"
+            android:paddingTop="24dp"
+            android:paddingBottom="24dp"
+            android:paddingLeft="36dp"
+            android:paddingRight="36dp"
+            >
+        <LinearLayout
+            android:id="@+id/details_text_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:orientation="vertical"
-            android:textAlignment="center"
-            android:layout_weight="1">
+
+            >
 
             <TextView
                 android:id="@+id/detail_textview_name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="loading name..."
-                android:textAlignment="center"
-                android:textSize="20sp" />
+                android:textSize="24sp" />
 
             <TextView
                 android:id="@+id/detail_textview_type"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="loading type..."
-                android:textAlignment="center"
-                android:textSize="20sp" />
+                android:textSize="24sp" />
 
             <TextView
                 android:id="@+id/detail_textview_stats"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="loading stats..."
-                android:textAlignment="center"
-                android:textSize="20sp" />
+                android:textSize="24sp" />
 
 
         </LinearLayout>
+            </ScrollView>
         </LinearLayout>
 
     </android.support.v7.widget.CardView>
